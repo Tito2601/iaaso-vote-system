@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f8fc;
+    margin: 0;
+    padding: 0;
+    color: #1a237e;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 60px;
+}
+
+h1, h2, h3 {
+    color: #1565c0;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    margin: 30px 0 20px 0;
+}
+
+nav a {
+    color: #1565c0;
+    background: #fff;
+    border: 1px solid #1565c0;
+    padding: 8px 18px;
+    border-radius: 5px;
+    margin: 0 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    background: #1565c0;
+    color: #fff;
+}
+
+form {
+    background: #fff;
+    padding: 28px 30px 22px 30px;
+    margin: 30px auto;
+    width: 340px;
+    border-radius: 10px;
+    box-shadow: 0 2px 16px #b3c6e0;
+    border: 1px solid #e3eaf7;
+}
+
+label {
+    display: block;
+    margin-bottom: 14px;
+    color: #1a237e;
+}
+
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #b3c6e0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: #f4f8fc;
+}
+
+button {
+    background: #1565c0;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0d47a1;
+}
+
+table {
+    background: #fff;
+    margin: 30px auto 20px auto;
+    border-collapse: collapse;
+    width: 420px;
+    box-shadow: 0 2px 12px #b3c6e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+td, th {
+    padding: 10px 16px;
+    border: 1px solid #e3eaf7;
+    text-align: center;
+}
+
+th {
+    background: #1565c0;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background: #f4f8fc;
+}
+
+p {
+    text-align: center;
+}
+
+p.error-message {
+    color: #c0392b;
+}
+
+p.success-message {
+    color: #27ae60;
+}
+
+p.welcome-message {
+    color: #1a237e !important;  /* Dark blue for welcome messages */
+}
+
+p.regular-text {
+    color: #000000;  /* Black for regular text */
+}
+
+a {
+    color: #1565c0;  /* Light blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Card container for main content */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px #b3c6e0;
+    border: 1px solid #e3eaf7;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 400px;
+    width: 90%;
+}
+
+/* Footer styling */
+footer {
+    background: #1565c0;
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+/* Subtle hover for table rows */
+tr:hover {
+    background: #e3eaf7;
+}
+
+.results-table {
+    width: 100%;
+    max-width: 380px;
+    margin: 18px auto 28px auto;
+    display: block;
+}
+
+.center-link {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.vertical-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin: 30px 0 20px 0;
+}
+
+.vertical-nav a {
+    display: block;
+    width: 180px;
+    margin: 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.08em;
+}
+
+.iaa-logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 250px;
+    height: auto;
+    z-index: 1000;
+}
+
+.back-icon {
+    display: inline-block;
+    font-size: 24px;
+    color: #1565c0;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: transform 0.2s;
+}
+
+.back-icon:hover {
+    transform: translateX(-5px);
+}
+
+/* Add responsive adjustments */
+@media screen and (max-width: 480px) {
+    .card {
+        margin: 15px auto;
+        padding: 20px;
+        width: 95%;
+    }
+    
+    .iaa-logo {
+        width: 200px;
+    }
+    
+    body {
+        padding-top: 50px;
+    }
+}
+
+.password-toggle {
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #1565c0;
+    background: none;
+    border: none;
+    padding: 5px;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.password-toggle:hover {
+    background: #e3eaf7;
+    color: #0d47a1;
+}
+
+.password-toggle:active {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-group input[type="password"],
+.form-group input[type="text"] {
+    padding-right: 40px;
+} 
